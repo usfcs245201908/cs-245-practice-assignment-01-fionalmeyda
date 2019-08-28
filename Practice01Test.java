@@ -73,8 +73,10 @@ public class Practice01Test {
 	 */
 	public boolean testNegativeFibonacci(Practice01Math math) {
 		try {
-			math.fact(-1);
+			int junk = math.fact(-1);
+			// System.out.println("Got " + junk);
 		} catch (Exception e) {
+			// e.printStackTrace();
 			return true;
 		}
 		
